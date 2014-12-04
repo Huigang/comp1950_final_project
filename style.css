@@ -1,0 +1,179 @@
+/*
+BCIT COMP 1950
+Final Project
+Navigation Author: Mark Lynch
+ */
+ 
+ 
+body{
+	font-size: 16px;	
+}
+#banner{
+	background-color:#003c79;
+	width: 100%;
+}
+section{
+	padding-left:5%;
+	width: 70%;
+}
+nav { }
+nav a { text-decoration: none; }
+
+nav ul
+{
+padding: 0;
+margin: 0;
+list-style-type: none;
+position: relative;
+}
+
+nav li { display: inline; }
+
+/*1st level elements*/
+nav ul
+{
+border-top: 1px solid #36c;
+border-bottom: 1px solid #36c;
+background-color: #36c;
+padding: 2px 0;
+margin-bottom: 2em;
+}
+
+nav li { margin: 0 0 0px; }
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited
+{
+background-color: #36c;
+border: 1px solid #36c;
+color: white;
+padding: 0px 5px;
+}
+
+nav ul a:hover,
+nav ul a:focus
+{
+background-color: #9CD4F7;
+border: 1px solid black;
+color: black;
+}
+
+/*current Link*/
+nav ul a#current,
+nav ul a#current:link,
+nav ul a#current:visited { font-weight: bold; }
+
+/*Second and subsequent levels*/
+nav ul ul
+{
+font-size: 80%;
+position: absolute;
+top: 23px;
+left: 0;
+width: 100%;
+border-top: none;
+background-color: #95B1BB;
+}
+
+nav ul ul li { display: inline; }
+
+nav ul ul a,
+nav ul ul a:link,
+nav ul ul a:visited
+{
+background-color: #95B1BB;
+border: 1px solid #95b1bb;
+color: black;
+}
+
+nav ul ul a:hover,
+nav ul ul a:focus
+{
+background-color: #9CD4F7;
+border: 1px solid black;
+color: black;
+}
+
+/*current Link*/
+nav ul ul a#subcurrent,
+nav ul ul a#subcurrent:link,
+nav ul ul a#subcurrent:visited { font-weight: bold; }
+
+
+/* Footer area */
+footer{
+	clear: both;
+	background-color: #ccd;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	height:160px;
+	width:100%;
+	border-top: 1px solid black;
+}
+#copy{
+	margin-top:20px;
+	text-align:center;
+	font-style:italic;
+	font-size:.75em;
+}
+.sitemap_pos{
+	text-align:center;
+	margin-top:20px;
+}
+.sitemap_inline{
+	display:inline;
+	padding:40px;
+}
+.sitemap_display{
+	-moz-transition:    background-color .5s linear;
+	-webkit-transition: background-color .8s linear;
+	transition:         background-color .8s linear;
+	color:#333333;
+	text-decoration: underline;
+}
+.sitemap_display:hover{
+	background-color:grey;
+}
+
+@media print { 
+	nav,footer ul{
+		display: none;
+	}
+	body, section, main{
+	   float: none;
+	   width: auto;
+	   margin: 0;
+	   padding: 0;
+	   background: none;
+	}
+	body, #content, main{
+		color: black;
+		font: 16px Georgia, "Times New Roman", Serif;
+	}	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: Arial, Verdana, Helvetica, Sans-serif;
+	}
+	h1{
+		font-size:25px;
+	}
+	h2{
+		position:relative;
+		left:40px;
+		bottom:26px;
+	}
+	.font{
+		margin-top:10px;
+	}
+	a:link, a:visited {
+		color: #309;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	ul li a[href^="http"]:link:after, 
+	a[href^="http"]:visited:after{
+	   content: " (URL: " attr(href) ") ";
+	   font-size: 100%;
+	}	
+}	
