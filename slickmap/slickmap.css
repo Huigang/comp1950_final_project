@@ -18,7 +18,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-style: inherit;
 	font-size: 100%;
 	font-family: inherit;
-	vertical-align: baseline;
+	vertical-align: left;
 }
 
 /* ------------------------------------------------------------
@@ -116,7 +116,8 @@ ol, ul {
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
-	text-align: center;
+	text-align: left;
+	padding-left:32%;
 	color: black;	
 	background: #c3eafb url('images/white-highlight.png') top left repeat-x;
 	border: 2px solid #b5d9ea;
