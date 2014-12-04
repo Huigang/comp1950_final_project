@@ -46,11 +46,11 @@ nav li { display: inline; }
 /*1st level elements*/
 nav ul
 {
-border-top: 0px solid #36c;
-border-bottom: 0px solid #36c;
-background-color: #ccc;
-padding: 2px 0;
-margin-bottom: 2em;
+	border-top: 1px solid #ccc;
+	background-color: #ccc;
+	padding: 2px;
+	padding-left:1px;
+	margin-bottom: 2em;
 }
 
 nav li { margin: 0 0 0px; }
@@ -59,18 +59,18 @@ nav ul a,
 nav ul a:link,
 nav ul a:visited
 {
-background-color: #ccc;
-border: 1px solid #36c;
-color: white;
-padding: 0px 5px;
+	background-color: #ccc;
+	border: 1px solid #003c79;
+	color: black;
+	padding: 0px 5px;
 }
 
 nav ul a:hover,
 nav ul a:focus
 {
-background-color: #9CD4F7;
-border: 1px solid black;
-color: black;
+	background-color: #333;
+	border: 1px solid black;
+	color: white;
 }
 
 /*current Link*/
@@ -81,13 +81,14 @@ nav ul a#current:visited { font-weight: bold; }
 /*Second and subsequent levels*/
 nav ul ul
 {
-font-size: 90%;
-position: absolute;
-top: 23px;
-left: 0;
-width: 100%;
-border-top: none;
-background-color: #003c79;
+	font-size: 90%;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 100%;
+	background-color: #003c79;
+	padding: 3px 0;
+	padding-left:1px;
 }
 
 nav ul ul li { display: inline; }
@@ -96,18 +97,19 @@ nav ul ul a,
 nav ul ul a:link,
 nav ul ul a:visited
 {
-background-color: #95B1BB;
-border: 1px solid #95b1bb;
-color: black;
+
+	background-color: #003c79;
+	border: 1px solid #ccc;
+	color: white;
 }
 
 nav ul ul a:hover,
 nav ul ul a:focus
 {
-background-color: #9CD4F7;
-border: 1px solid black;
-padding-bottom:1px;
-color: black;
+
+	background-color: white;
+	border: 1px solid white;
+	color: #003c79;
 }
 
 /*current Link*/
