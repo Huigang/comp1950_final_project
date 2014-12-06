@@ -7,6 +7,7 @@ Final Project
 04/11/2014
 -->
 <head>
+    
 	<title>BCIT:Comp 1950 - Final Project</title>
 	<link rel="stylesheet" href="reset.css">
 	<link href="style.css" title="Default styles" rel="stylesheet" />
@@ -17,21 +18,11 @@ Final Project
 			content="The official BCIT Comp 1950 Course ebite">
 </head>
 <body>
+
 	<header><div id="banner"><span id="banner_bcit">BCIT<span></div>
 	</header>
-	<nav>
-		<ul id="navlist">
-			<li id="active"><a href="#" id="current">Home</a> 
-				<ul id="subnavlist">
-					<li id="subactive"><a href="#" id="subcurrent">Content</a></li>
-					<li><a href="#">About the course</a></li>
-					<li><a href="#">Resources</a></li>
-				</ul>
-			</li>
-		<li><a href="#">Lectures</a></li>
-		<li><a href="#">Quizzes</a></li>
-		</ul>
-	</nav>
+	<!--#include file="navigation.shtml" -->
+
 	<main>
 		<section>	
 			<article>
@@ -104,28 +95,6 @@ Final Project
 			
 		</section>
 	</main>	
-	
-	<footer>
-		<p id="copy"> CopyRight &copy; 2014 · BCIT</p>
-		<aside>
-			<ul class="sitemap_pos">
-				<li class="sitemap_inline">
-					<a class="sitemap_display" href="http://bcitcomp.ca/students/">Students on bcitcomp.ca</a>
-				</li>
-				
-				<li class="sitemap_inline">
-					<a class="sitemap_display" href="https://my.bcit.ca/cp/home/displaylogin">my.bcit</a>
-				</li>
-				
-				<li class="sitemap_inline">
-					<a class="sitemap_display" href="http://www.bcit.ca/">bcit</a>
-				</li>
-				
-				<li class="sitemap_inline">
-					<a class="sitemap_display" href="http://www.bcit.ca/cas/computing/">bcit: Computing</a>
-				</li>
-			</ul>
-		</aside>
-	</footer>
+	<!--#include file="footer_protosite.shtml" -->
 </body>
 </html>
